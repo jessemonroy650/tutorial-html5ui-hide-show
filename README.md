@@ -52,4 +52,4 @@ To be clear, both methods we are looking at will cause *reflow*, but the objecti
 
 As such, when using a CSS class that hides an HTML element (with let us say `display:none;`) and the display that element (with let us say `display:block;`), we have reduced the reflow by not forcing the `viewport` to add an HTML element into the DOM tree. 
 
-To be clear, dynamically adding an HTML element into a webpage, forces the entire webpage to be recalculated, then drawn. If instead we just make the HTML element visible, the webpage recalculates from that point until the end of the page; and NOT the entire webpage.
+To be clear, dynamically adding an HTML element into a webpage, forces the entire webpage to be recalculated, then drawn. If instead we just make the HTML element visible, the webpage recalculates from that point until the end of the page; and NOT the entire webpage. (This effects varies from webview engine to webview engine.)
