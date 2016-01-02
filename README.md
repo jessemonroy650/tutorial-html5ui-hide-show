@@ -33,8 +33,8 @@ A couple of things to note.
 
 Two important requirements for Cordova/Phonegap are to:
 
-1. list `cordova.js` in the `index.html` (or `phonegap.js` for phonegap).
-2. wait for the `deviceready` event, which is given by `cordova.js` once it has finished loading *itself* and all the *plugins*.
+1. List `<script src="cordova.js"></script>` in the `index.html` (or `phonegap.js` for phonegap). (Do not include the file in the bundle.)
+2. Wait for the `deviceready` event, which is given by `cordova.js` once it has finished loading *itself* and all the *plugins*.
 
 ### The `whitelist` plugin requirement ##
 
@@ -56,4 +56,4 @@ To be clear, both methods we are looking at will cause *reflow*, but the objecti
 
 As such, when using a CSS class that hides an HTML element (with let us say `display:none;`) and the display that element (with let us say `display:block;`), we have reduced the reflow by not forcing the `viewport` to add an HTML element into the DOM tree. 
 
-To be clear, dynamically adding an HTML element into a webpage, forces the entire webpage to be recalculated, then drawn. If instead we just make the HTML element visible, the webpage recalculates from that point until the end of the page; and NOT the entire webpage. (This effects varies from webview engine to webview engine.)
+To be clear, dynamically adding an HTML element into a webpage, forces the entire webpage to be reorder (the DOM), recalculate, and repaint. If instead we just make the HTML element visible, the webpage recalculates from that point until the end of the page; and NOT the entire webpage; reorder never takes and repaint happens regardless. (This effects varies from webview engine to webview engine.)
