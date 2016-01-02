@@ -2,7 +2,11 @@
 Date: 2016-01-01<br>
 Last Update 2016-01-01
 
-This is code for a tutorial to hide or show an HTML5 element, such as `<div>`, `<span>`, `<iframe>`, and more. I have not written a blog post this yet.
+This is code for a tutorial to hide and show an HTML5 element, such as `<div>`, `<span>`, `<iframe>`, and more. I have not written a blog post this yet.
+
+The App starts with an `<iframe>` hidden. Clicking the button at the top of the screen toggles the `<iframe>` to "visiable"; clicking again, hides the `<iframe>`.
+
+## About the Code ##
 
 This code example is intended to work with [*Phonegap Build*](https://build.phonegap.com/), a cloud-based build service by Phonegap/Adobe.
 
@@ -13,7 +17,7 @@ It also demonstrates how to use the new Cordova `whitelist` plugin. The requirem
 A couple of things to note. 
 
 1. In the `index.html`, there is no `<style></style>` block, `<script></script>` block, or `style=` attribute to any HTML elements. Doing so would require that the CSP filter contain the attribute `unsafe-inline` for both `script-src` and `style-src`.
-2. In the `config.xml`, you will find multiple domains listed with `<allow-navigate (...) />`. The list encompasses all the *third-party* domains that support the one webpage we are loading. NOTE: because of the filter, any attempts to leave the webpage will end in failure, *unless* that domain is also listed.
+2. In the `config.xml`, you will find multiple domains listed with `<allow-navigate (...) />`. The list encompasses all the *third-party* domains that support the one webpage we are loading. NOTE: because of the filter, any attempts to leave the webpage will end in failure &ndash; unless that domain is also `whitelist`ed.
 
 ## Files ##
 - index.html - **required**
