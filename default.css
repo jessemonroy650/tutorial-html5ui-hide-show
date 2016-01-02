@@ -1,0 +1,21 @@
+* {margin:0;padding:0;box-sizing:border-box;}
+body {margin:0;font-family:sans-serif;font-size:large;}
+img {border:0;margin:0;padding:0;}
+a {text-decoration:none;}
+.hide {display:none;}
+.show {display:block;}
+.border {border:solid 1px black;}
+.bgc {background-color:#e0e0e0;}
+
+#thing {
+overflow:hidden;
+overflow-x:hidden;
+overflow-y:hidden;
+height:100%;
+width:100%;
+position:absolute;
+top:65px;
+left:0px;
+right:0px;
+bottom:0px
+}

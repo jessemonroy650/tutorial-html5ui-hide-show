@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv=content-type content="text/html; charset=utf8">
+    <title>Show and Hide iframe</title>
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="Content-Security-Policy" 
+             content="default-src *;
+                      style-src 'self'; 
+                      script-src 'self';" />
+    <link rel="stylesheet" type="text/css" href=default.css>
+</head>
+<body>
+<div class="border bgc">
+    <center>
+    <h2>Show/Hide iframe</h2>
+    <button id=toggle >toggle</button>
+    </center>
+</div>
+<div id=togglePane class=hide >
+<iframe id=thing src="http://cordova.apache.org/blog/"
+    frameborder="0" scrolling="yes"></iframe>
+</div>
+<script type="text/javascript" src="phonegap.js"></script>
+<script type="text/javascript" src="fastclick.js"></script>
+<script type="text/javascript" src="zepto-1.1.6.js"></script>
+<script type="text/javascript" src="app.js"></script>
+</body>
+</html>

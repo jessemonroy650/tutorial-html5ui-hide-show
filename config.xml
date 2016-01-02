@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        id          = "com.bsdmasterindex.show-hide-iframe"
+        version     = "1.0.0"
+        versionCode = "100" > <!-- versionCode is optional and Android only -->
+        <!-- Tool Set Version -->        
+        <preference name='phonegap-version' value='cli-5.2.0' />
+
+        <name>show/hide iframe</name>
+        <description>show and hide iframe</description>
+        <author href="http://bsdmasterindex.com" email="jessemonroy650@yahoo.com">
+        Jesse Monroy
+        </author>
+
+        <!-- App requested permission -->
+        <preference name="permissions" value="none"/>
+
+        <!-- ANDROID * ANDROID * ANDROID -->
+        <platform name="android" ></platform>
+
+        <!-- PLUGINS * PLUGINS * PLUGINS -->
+        <plugin name="cordova-plugin-device"         source="npm" spec="1.0.1" />
+        <plugin name="cordova-plugin-whitelist"      source="npm" spec="1.0.0" />
+
+        <!-- WHITELIST * WHITELIST * WHITELIST -->
+        <!-- https://github.com/jessemonroy650/top-phonegap-mistakes/blob/master/the-whitelist-system.md -->
+        <allow-navigation href="http://cordova.apache.org/" />
+        <allow-navigation href="https://slack.cordova.io" />
+        <allow-navigation href="http://www.google-analytics.com/" />
+        <allow-navigation href="https://*.imgur.com/" />
+        <allow-navigation href="https://*.twitter.com/" />
+        <allow-navigation href="https://*.twimg.com/" />
+        <allow-navigation href="http://cordovablogs.discus.com/" />
+        <!-- <allow-intent href="*" /> -->
+        <access origin="*" /> <!-- Required for iOS9 -->
+    </widget>
