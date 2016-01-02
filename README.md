@@ -12,7 +12,7 @@ This code example is intended to work with [*Phonegap Build*](https://build.phon
 
 In addition, this works with the latest version (`cli-5.2.0`) of the tools set, as of this date (2016-01-01).
 
-It also demonstrates how to use the new Cordova `whitelist` plugin. The requirements for this plugin are [heinous](https://en.wiktionary.org/wiki/heinous#Adjective) and tedious. This `app` hopes to demostrate how best to apply the parameters for this <u>one example</u>.
+It also demonstrates how to use the new Cordova `whitelist` plugin. The requirements for this plugin are [heinous](https://en.wiktionary.org/wiki/heinous#Adjective) and tedious. This `app` hopes to demostrate how best to apply the parameters for this ***one example***.
 
 A couple of things to note. 
 
