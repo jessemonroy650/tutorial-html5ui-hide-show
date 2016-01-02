@@ -4,19 +4,19 @@ Last Update 2016-01-01
 
 This is code for a tutorial to hide and show an HTML5 element, such as `<div>`, `<span>`, `<iframe>`, and more. I have not written a blog post this yet.
 
-The App starts with an `<iframe>` hidden. Clicking the button at the top of the screen toggles the `<iframe>` to "visiable"; clicking again, hides the `<iframe>`.
+The App starts with an `<iframe>` hidden. Clicking the button at the top of the screen toggles the `<iframe>` to "visible"; clicking again, hides the `<iframe>`.
 
 ## About the Code ##
 
 This code example is intended to work with [*Phonegap Build*](https://build.phonegap.com/), a cloud-based build service by Phonegap/Adobe.
 
-In addition, this works with the latest version, as of this date (2016-01-01); that version being `cli-5.2.0`.
+In addition, this works with the latest version (`cli-5.2.0`) of the tools set, as of this date (2016-01-01).
 
 It also demonstrates how to use the new Cordova `whitelist` plugin. The requirements for this plugin are [heinous](https://en.wiktionary.org/wiki/heinous#Adjective) and tedious. This `app` hopes to demostrate how best to apply the parameters for this one example.
 
 A couple of things to note. 
 
-1. In the `index.html`, there is no `<style></style>` block, `<script></script>` block, or `style=` attribute to any HTML elements. Doing so would require that the CSP filter contain the attribute `unsafe-inline` for both `script-src` and `style-src`.
+1. In the `index.html`, there is no `<style></style>` block, `<script></script>` block, or `style=` attribute to any HTML elements. If such elements were used, it would require that the CSP filter contain the attribute `unsafe-inline` for both `script-src` and `style-src`.
 2. In the `config.xml`, you will find multiple domains listed with `<allow-navigate (...) />`. The list encompasses all the *third-party* domains that support the one webpage we are loading. NOTE: because of the filter, any attempts to leave the webpage will end in failure &ndash; unless that domain is also `whitelist`ed.
 
 ## Files ##
@@ -38,7 +38,7 @@ Two important requirements for Cordova/Phonegap are to:
 
 ### The `whitelist` plugin requirement ##
 
-To note, if `cordova.js` does not load then no plugins work. This means that the `whitelist` plugin does not work. If a `whitelist` system is not implemented, then your app will be rejected by *Google Play* and *Apple iTunes*.
+To note, if `cordova.js` does not load, then no plugins work. This means that the `whitelist` plugin does not work. If a `whitelist` system is not implemented, then your app may be rejected by *Google Play* and *Apple iTunes*.
 
 ## Load the `<iframe (...) />` ##
 
