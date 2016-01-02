@@ -36,7 +36,7 @@ Two important requirements for Cordova/Phonegap are to:
 
 To note, if `cordova.js` does not load then no plugins work. This means that the `whitelist` plugin does not work. If a `whitelist` system is not implemented, then your app will be rejected by *Google Play* and *Apple iTunes*.
 
-## Load the `<iframe (...) /> ##
+## Load the `<iframe (...) />` ##
 
 There are a couple of notes here.
 
